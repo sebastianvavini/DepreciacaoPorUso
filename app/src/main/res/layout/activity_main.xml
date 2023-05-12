@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+
+        >
+
+
+
+
+        <EditText
+            android:id="@+id/editText_N_HoraTrabNoPeriodo"
+            android:padding="16dp"
+            android:layout_marginTop="80dp"
+            android:hint="Horas Trabalhadas no Período"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horas Trabalhadas no período"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_N_HorasEstimadasVidaUtil"
+            android:padding="16dp"
+            android:hint="Horas Estimadas Vida Útil"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horas Estimadas Vida Útil"/>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_VidaUtil"
+            android:padding="16dp"
+            android:hint="Vida Util"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vida Útil em Anos"/>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText_CustoNovo"
+            android:padding="16dp"
+            android:hint="Custo Novo"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custo Novo"/>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/button_calculateTaxa"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Calcular Taxa"
+
+            />
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taxa de Depreciacao:"/>
+
+        <TextView
+            android:id="@+id/textViewTaxaDepreciacao"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "/>
+
+
+
+
+        <Button
+
+            android:id="@+id/button_calculateDepreciacao"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Calcular Depreciação"
+
+            />
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Depreciação Por Uso:"/>
+
+        <TextView
+            android:id="@+id/textViewDepreciacaoPorUso"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado: "/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
